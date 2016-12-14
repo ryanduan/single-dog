@@ -10,10 +10,12 @@ import requests
 import json
 
 
-AppID = 'wx094dee6d870e58ab'
-AppSecret = '6b96aa12956ce3b964844410ea8d5272'
-EncodingAESKey = 'Ji5DTTxV4aEIcBIs3mHvkhyKNQiKr3thREULHuoAiOf'
-token = 'tt19890215'
+# AppID = 'wx094dee6d870e58ab'
+# AppSecret = '6b96aa12956ce3b964844410ea8d5272'
+# EncodingAESKey = 'Ji5DTTxV4aEIcBIs3mHvkhyKNQiKr3thREULHuoAiOf'
+# token = 'tt19890215'
+AppID = 'wxac6b807e9361d42d'
+AppSecret = '2148daa4ed0548f2d330ccccbb9d4575'
 
 
 class HttpClient(object):
@@ -37,7 +39,7 @@ class WeChat(object):
     timeout = 10
     response_type = 'code'
     scope = 'snsapi_userinfo'
-    redirect_uri = 'http://api.duanyong.wang/wx/userinfo'
+    redirect_uri = 'http://api.duanyong.wang/wx/userinfo.html'
 
     def build_uri(self, params):
         keys = params.keys()

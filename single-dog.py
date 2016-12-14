@@ -23,7 +23,7 @@ class Application(tornado.web.Application):
         urls = [
             (r'/?', Index),
             (r'/wx/comment/?', WX),
-            (r'/wx/userinfo/?', WXUser),
+            (r'/wx/userinfo.html/?', WXUser),
         ]
 
         settings = dict(

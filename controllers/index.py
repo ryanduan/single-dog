@@ -17,7 +17,7 @@ class Index(RequestHandler):
 
     def get(self, *args, **kwargs):
         """"""
-        data = dict(
-            redirect_url='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx094dee6d870e58ab&redirect_uri=http%3A%2F%2Fapi.duanyong.wang%2Fwx%2Fuserinfo&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect'
-        )
-        self.render('index.html', **data)
+        # from models.wechat import WeChat
+        # wc = WeChat()
+        # print wc.create_code_url()
+        self.render('index.html')
