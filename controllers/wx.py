@@ -30,6 +30,7 @@ class WX(RequestHandler):
 
     def get(self, *args, **kwargs):
         """"""
+        print self.request
         signature = self.get_argument('signature', '')
         timestamp = self.get_argument('timestamp', '')
         nonce = self.get_argument('nonce', '')
@@ -58,4 +59,4 @@ class WXUser(RequestHandler):
         wc.code = code
         user_info = wc.get_user_info()
         print user_info
-        self.redirect('http://eileen.duanyong.wang/index')
+        self.redirect('http://eileen.duanyong.wang/index1')
