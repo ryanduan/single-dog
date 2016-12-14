@@ -13,7 +13,7 @@ from tornado.options import options
 import tornado.web
 from tornado.httpserver import HTTPServer
 from controllers.index import Index
-from controllers.wx import WX
+from controllers.wx import WX, WXUser
 
 
 class Application(tornado.web.Application):
@@ -23,6 +23,7 @@ class Application(tornado.web.Application):
         urls = [
             (r'/?', Index),
             (r'/wx/comment/?', WX),
+            (r'/wx/userinfo/?', WXUser),
         ]
 
         settings = dict(

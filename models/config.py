@@ -18,8 +18,9 @@ constellation_dict = {
 
 AppID = 'wx094dee6d870e58ab'
 AppSecret = '6b96aa12956ce3b964844410ea8d5272'
-EncodingAESKey = 'cmPFWP3yUC9ZJfFAOOfG2ioW8bqpUMyakdEBPASshwS'
-token = ''
+EncodingAESKey = 'Ji5DTTxV4aEIcBIs3mHvkhyKNQiKr3thREULHuoAiOf'
+token = 'tt19890215'
+wx_redirect_url = 'http://api.duanyong.wang/wx/userinfo'
 
 
 class Config(object):
