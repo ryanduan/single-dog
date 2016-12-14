@@ -21,3 +21,10 @@ class Index(RequestHandler):
         # wc = WeChat()
         # print wc.create_code_url()
         self.render('index.html')
+
+
+class Index1(RequestHandler):
+    """"""
+
+    def get(self, *args, **kwargs):
+        self.render('index1.html')

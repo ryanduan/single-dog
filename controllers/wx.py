@@ -57,3 +57,5 @@ class WXUser(RequestHandler):
         wc = WeChat()
         wc.code = code
         user_info = wc.get_user_info()
+        print user_info
+        self.redirect('http://eileen.duanyong.wang/index')
