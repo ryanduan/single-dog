@@ -14,8 +14,8 @@ import json
 # AppSecret = '6b96aa12956ce3b964844410ea8d5272'
 # EncodingAESKey = 'Ji5DTTxV4aEIcBIs3mHvkhyKNQiKr3thREULHuoAiOf'
 # token = 'tt19890215'
-AppID = 'wxac6b807e9361d42d'
-AppSecret = '2148daa4ed0548f2d330ccccbb9d4575'
+AppID = 'wxed1a36ce3fa969f5'
+AppSecret = 'bb3830caf045ab10c9c2c902f1751252'
 
 
 class HttpClient(object):

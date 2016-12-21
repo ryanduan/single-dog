@@ -12,7 +12,7 @@ import tornado.ioloop
 from tornado.options import options
 import tornado.web
 from tornado.httpserver import HTTPServer
-from controllers.index import Index
+from controllers.index import Index, Index1
 from controllers.wx import WX, WXUser
 
 
@@ -24,6 +24,7 @@ class Application(tornado.web.Application):
             (r'/?', Index),
             (r'/wx/comment/?', WX),
             (r'/wx/userinfo.html/?', WXUser),
+            (r'/index1/?', Index1),
         ]
 
         settings = dict(
